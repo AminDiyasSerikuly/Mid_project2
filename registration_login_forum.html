@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Form </title>
+
+    <link rel="stylesheet"  href="css/registration.css">
+
+      <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+        <script src="bootstrap-3.3.7/js/tests/vendor/jquery.min.js"></script>
+        <script src="js/registration_page.js"></script>
+            <script src="js\registration_page_mail_checking.js"></script>
+
+        <!-- <script type="text/javascript">
+            $("a[name='accaunt1']").text("leila");
+        </script> -->
+
+
+      <style media="screen">
+      #w1{
+        width: 100%;
+        height: 100%;
+      }
+      a[name="accaunt"]{
+        margin-top: 6.6%;
+        background-color: #ffb60c;
+
+        border-radius: 4%;
+
+      }
+      a[name="ads"]{
+        margin-top: 5%;
+
+        background-color: lightblue;
+
+        border-radius: 4%;
+
+      }
+      li{
+        margin: 2px 2px;
+      }
+      .active{
+          width: 5%;
+      }
+      #k{
+        margin-left: 45%;
+      }
+      .nav{
+        width: 90%;
+      }
+      .navbar-header{
+      margin-top: 0.6%}
+      a[name="accaunt1"]{
+        margin-top: 4.9%;
+      }
+      a[name="accaunt2"]{
+        margin-top: 7%;
+      }
+      a[name="accaunt3"]{
+        margin-top: 7%;
+      }
+      #akra{
+        margin-left: 10%;
+      }
+      </style>
+    <script src="bootstrap-3.3.7/js/tests/vendor/jquery.min.js"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("h2[name='u2']").on("click", function(){
+        $("h2[name='u2']").css("background-color","lightgreen");
+          $("h2[name='u2']").css("color","white");
+          $("h2[name='u2']").css("border-radius","5%");
+
+          $("h2[name='u1']").css("background-color","white");
+            $("h2[name='u1']").css("color","lightblue");
+            $("h2[name='u1']").css("border-radius","5%");
+
+          $("form[name='Registration']").show(150);
+            $("form[name='Question']").hide(150);
+            $("form[name='Login']").hide(150);});
+        $("h2[name='u1']").on("click", function(){
+          $("h2[name='u1']").css("background-color","lightgreen");
+            $("h2[name='u1']").css("color","white");
+            $("h2[name='u1']").css("border-radius","5%");
+
+            $("h2[name='u2']").css("background-color","white");
+              $("h2[name='u2']").css("color","lightblue");
+              $("h2[name='u2']").css("border-radius","5%");
+
+          $("form[name='Login']").show(150);
+            $("form[name='Registration']").hide(150);
+              $("form[name='Question']").hide(150);});
+
+
+
+        });
+
+
+    </script>
+  </head>
+
+
+  <body>
+
+    <nav class="simple-nav" style="background-color:rgba(1,1,1,0.6);  width:100%; top:0; position:fixed;">
+      <div class="container" style="margin-top:0.4%;;">
+        <div class="first" style="width:20%; height:100%; background-color:;margin-left:1%;margin-top: 0.1%;display:inline-block;">
+              <a href="#" style="font-size:170%; margin-top: 2px;color:white;">VroomKZ.com</a>
+              <img src="images/G.jpg" alt="" style="width:15%; height:100%; border-radius:30px;margin-left:2%;">
+        </div>
+        <div class="second" style="width:30%; display:inline-block;margin-bottom:1.2%;">
+              <a href="#" style="margin-left:; color:white;">Главная страница</a>
+              <a href="#" style="margin-left:3%; color:white;">Новинки 2018</a>
+              <a href="#" style="margin-left:3%; color:white;">Авто новости</a>
+        </div>
+
+        <div class="btnu1" style="width:30%; height:auto; display:inline-block; margin-left:15%; margin-bottom: 1%;">
+               <button type="button" name="btnu2"class="btn btn-info" style="display:inline-block;" >Мои Аккаунт</button>
+                <button type="button" name="btnu2"class="btn btn-warning" style="display:inline-block;">Подать обьявление</button>
+        </div>
+
+      </div>
+    </nav>
+
+<div class="container" style="margin-top:6%;">
+  <div >
+      <p id="invalid" style="color:red; font-size:150%;"></p>
+  </div>
+
+<div id="u">
+      <h2 name="u1" >Login Form </h2>  <h2 name="u2">Registration</h2>
+</div>
+
+<form name="Login">
+
+
+    <div class="imgcontainer">
+      </div>
+
+
+
+
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Username" name="email_enter" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password_enter" required>
+
+    <button id="akra" type="button" name="login_btn">Login</button>
+    <button type="button" class="cancelbtn">Cancel</button>
+    <label>
+      <input type="checkbox" checked="checked"> Remember me </input>
+    </label>
+
+   <div class="container" style="background-color:#f1f1f1" name="sp">
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+<form action="/action_page.php" name="Registration">
+
+    <div class="imgcontainer">
+      </div>
+
+
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" >
+
+    <label><b>Email-address</b></label>
+    <input type="text" placeholder="Enter Email-adress" name="eml" >
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password1" id="pswd1" >
+
+    <label><b>Repeat Password</b></label>
+    <input type="password" placeholder="Enter Password again" name="password2">
+
+
+    <label><b>Adress</b></label>
+    <input type="text"  name="question" required>
+
+    <label><b>Your age</b></label>
+    <input type="text"  name="answer" required>
+
+    <button type="button" name="create">Create</button>
+    <button type="button" class="cancelbtn">Cancel</button>
+    <label>
+      <input type="checkbox" checked="checked"> Remember me </input>
+    </label>
+
+   <div class="container" style="background-color:#f1f1f1" name="sp">
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+
+
+
+
+</form>
+
+
+
+<!-- <form  name="Question">
+
+
+
+
+
+
+    <button type="button" name="main_create1">Create</button>
+    <button type="button" class="cancelbtn">Cancel</button>
+
+   <div class="container" style="background-color:#f1f1f1" name="sp">
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> -->
+
+
+
+
+
+</div>
+
+</div>
+
+
+       <div class="footer">
+         <img src="images/footer.png" id="img1">
+       </div>
+
+
+</div>
+
+</div>
+
+  </body>
+
+</html>

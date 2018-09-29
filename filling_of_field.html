@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Filling_of_field</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet"  href="css/main_page1.css">
+    <script src="bootstrap-3.3.7/js/tests/vendor/jquery.min.js"></script>
+    <script src="js/filling_of_field_json_select.js"></script>
+    <script src="exper.js"></script>
+  </head>
+
+<script type="text/javascript">
+$("div[id='img_place']").click(function() {
+  alert("hello");
+$("input[id='my_file']").focus().click();
+});
+
+function wait1(){
+  alert("waiting");
+}
+
+function suc1(data){
+      alert(data);
+}
+  $(document).ready(function(){
+      $("input[name='last_button']").bind("click",function(){
+        $.ajax({
+            url:"php/from_filling_field_adding.php",
+            type: "POST",
+            data: ({  Chapter: $("input[name='name11']").val() ,Mark_of_car: $("select[name='car_logo'] option:selected").text() ,Model_of_Mark: $("select[name='version_of_logo'] option:selected").text(),
+            Price: $("input[name='Price']").val(), Type_of_Body: $("select[name='type_of_body_select'] option:selected").text(),
+            date: $("input[name='Date_of_car']").val(),Box_of_Gear: $("select[name='Box_of_Gear'] option:selected").text(),
+            color_of_car: $("select[name='color_of_car'] option:selected").text(),type_of_fuel: $("select[name='type_of_fuel_select'] option:selected").text(),
+            State_of_Car: $("select[name='State_of_Car'] option:selected").text(), Rule_Side: $("select[name='Rule_Side'] option:selected").text(),
+            Mileage: $("input[name='Mileage']").val(), Volume_of_Engine: $("input[name='Volume_of_Engine']").val(),
+            Describtion: $("textarea[name='namet']").val(), City:  $("input[name='City']").val(), Address:  $("input[name='Adress']").val(),
+            Number_of_phone:  $("input[name='Number_of_phone']").val(),Email: $("input[name='Email']").val(), Contact_face12: $("input[name='Contact_face11']").val()
+
+          }),
+            beforeSend: wait1,
+            success: suc1
+        });});
+
+"input[name='name11'"
+      });
+
+
+
+
+
+
+
+  </script>
+
+  <style media="screen">
+
+    .container{
+      margin-top: 3.7%;
+      height: auto;
+
+    }
+    .chapter{
+      /* border: 0.5px solid red; */
+      text-align: center;
+      width: 25%;
+    }
+    .main{
+      width: 80%;
+      /* border: 0.1px solid red; */
+      height: auto;
+      margin-left:10%;
+    }
+    .main2-5{
+      width: 60%;
+      /* border: 0.1px solid red; */
+      margin-left: 20%;
+      height: auto;
+    }
+    .main2{
+      margin-top: 2%;
+      margin-left: 20%;
+        /* border: 0.1px solid black; */
+        width: 60%;
+    }
+    .main3{
+      margin-left: 20%;
+      /* border: 0.1px solid black; */
+      width: 60%;
+  }
+    }
+    input[type="text"]{
+      /* font-size: 10%; */
+    }
+    .dl1{
+      width: 80%;
+      height: 10px;
+    }
+    .select1{
+      width: 100%;
+    }
+    .select2{
+      width: 100%;
+    }
+    .select_main{
+      width: 75.8%;
+      display: inline-block;
+      vertical-align: top;
+
+    }
+    .Category{
+      /* margin-left: 5%; */
+      width: 13%;
+      display: inline-block;
+    }
+    #a1{
+      width: 100%;
+    }
+    #a2{
+      width: 100%;
+    }
+    select{
+          overflow: hidden;
+    }
+
+    option:hover{
+        background-color: black;
+    }
+    .all{
+     height: 500px;
+     width: 40%;
+    }
+    h5{
+      margin-top: 20%;
+    }
+    .line1{
+      margin-top: 0.4%;
+    }
+    #img1{
+      width: 24%;
+      height: 100%;
+      /* background-color: red; */
+      display: inline-block;
+    }
+    #img_place{
+      border: 1.5px solid grey;
+    }
+    #img_place:hover{
+      border: 3px solid lightgreen;
+    }
+    .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.main2 .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: rgba(51, 255, 51,0.5);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: 1%;
+    /* top: -1px; */
+    /* left: 1%; */
+}
+
+.main2 .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(51, 255, 51,0.5) transparent transparent;
+}
+.main2:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+  </style>
+
+  <body>
+    <nav class="simple-nav" style="background-color:rgba(1,1,1,0.6);  width:100%; top:0; position:fixed;">
+      <div class="container" style="margin-top:0.4%;">
+        <div class="first" style="width:20%; height:100%; background-color:;margin-left:1%;margin-top: 0.1%;display:inline-block;">
+              <a href="#" style="font-size:170%; margin-top: 2px;color:white;">VroomKZ.com</a>
+              <img src="images/G.jpg" alt="" style="width:15%; height:100%; border-radius:30px;margin-left:2%;">
+        </div>
+        <div class="second" style="width:30%; display:inline-block;margin-bottom:1.2%;">
+              <a href="#" style="margin-left:; color:white;">Главная страница</a>
+              <a href="#" style="margin-left:3%; color:white;">Новинки 2018</a>
+              <a href="#" style="margin-left:3%; color:white;">Авто новости</a>
+        </div>
+
+        <div class="btnu1" style="width:30%; height:auto; display:inline-block; margin-left:15%; margin-bottom: 1%;">
+               <button type="button" name="btnu2"class="btn btn-info" style="display:inline-block;" >Мои Аккаунт</button>
+                <button type="button" name="btnu2"class="btn btn-warning" style="display:inline-block;">Подать обьявление</button>
+        </div>
+
+      </div>
+    </nav>
+        <div class="container" style="background-color:#ffffe6;border-left:2px solid #e6ffe6; border-right:2px solid #e6ffe6;">
+          <div class="main">
+            <div class="chapter" style="margin-top:2%;">
+              <label style="font-family:Arial; font-weight:300; margin-bottom: -2%;">Подать обьявление на  <h5 style="display:inline-block; font-family:Arial; color:orange;margin-top:0;">   VroomKZ.com</h5></label>
+            </div>
+            <div class="main2" >
+                <label style="font-weight:500;">Загаловок*</label>
+                <input type="text" name="name11"  style="display:inline-block; border: 1px solid grey; border-radius: 5%; width:75.7%;"></input>
+                <span class="tooltiptext" style="display:inline-block;">Знаки не должны привышать 52 символов</span>
+            </div>
+            <div class="main2-5">
+              <div class="Category">
+                <label id="a1">Марка</label>
+                  <label id="a2">Модель</label>
+                    <!-- <label style="font-family:500; vertical-align: top; font-weight:500; width:100%;">Описание*</label> -->
+
+              </div>
+
+
+
+
+            <div class="select_main">
+              <select  name="car_logo"    style="border-radius:5%; margin-top:0.5%; width: 100%;">
+                  <option value="0" selected="selected"></option>
+                  <option value="1">Audi</option>
+                  <option value="2">BMW</option>
+                  <option value="3">Mersedens-Benz</option>
+                  <option value="4">Nissan</option>
+                  <option value="5">Toyota</option>
+                  <option value="6">Volkswagen</option>
+                  <option value="7">Lexus</option>
+                  <option value="8">Subaru</option>
+                  <option value="9">Ford</option>
+                  <option value="10">Porshe</option>
+                  <option value="11">Lamborghini</option>
+                  <option value="12">Ferrari</option>
+                  <option value="13">Land Rover</option>
+                  <option value="14">Rolls-Royce</option>
+                  <option value="15">Jeep</option>
+              </select>
+
+
+              <select name="version_of_logo" style=" margin-top: 1%; width:100%;">
+                    <option value="0" selected="selected"></option>
+              </select>
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="main3">
+
+            </div>
+
+
+    <div class="all" style="margin-top:3%; border-top: 0.5px solid grey; width:100%;">
+          <div class="writen" style=" width:25%;text-align:right;display:inline-block; vertical-align:top;">
+          <h5>Цена</h5>
+          <h5>Тип кузова</h5>
+          <h5>Год выпуска</h5>
+          <h5>Коробка передач</h5>
+          <h5>Цвет</h5>
+          <h5>Вид топлива</h5>
+          <h5>Состояние машины</h5>
+          <h5>Руль</h5>
+          <h5>Пробег</h5>
+          <h5>Обьем двс</h5>
+          </div>
+          <div class="wrt" style="display:inline-block; width: 60%; margin-left:3%;" >
+                <div id="area" style="margin-top:5%;">
+                      <input type="text" name="Price"  style="border: 1px solid grey;border-radius:3%; width:30%;  ">
+                      <h6 style="display:inline-block">тг.</h6>
+                      <input type="checkbox" name="chb" style="display:inline-block; margin-left: 5%; vertical-align: middle;">
+                      <h6 style="display:inline-block; vertical-align: bottom">Договорная</h6>
+
+                </div>
+
+<!-- Type_of_Body -->
+<!-- ====================================================================================================================================== -->
+                <div id="type_of_body" style="margin-top:5%;">
+                  <select  name="type_of_body_select"  style="width:30%; ">
+                        <option value="0"><h6>Выбрать</h6></option>
+                        <option value="1"><h6>Кабриолет</h6></option>
+                        <option value="2"><h6>Пикап</h6></option>
+                        <option value="3"><h6>Купе</h6></option>
+                        <option value="4"><h6>Хэтчбек</h6></option>
+                        <option value="4"><h6>Минивэн</h6></option>
+                        <option value="4"><h6>Внедорожник</h6></option>
+                        <option value="4"><h6>Седан</h6></option>
+                  </select>
+                </div>
+<!-- ======================================================================================================================================= -->
+
+<!-- date of adiing-->
+<!-- ======================================================================================================================================= -->
+                <div id="date" style="margin-top:7%;">
+                      <input type="text" name="Date_of_car" style="border-radius:3%; border: 1px solid grey;">
+                </div>
+<!-- ======================================================================================================================================= -->
+
+
+<!-- box_of_gear -->
+<!-- =======================================================================================================================================  -->
+                <div id="box_of_gear" style="margin-top:6%;">
+                      <select name="Box_of_Gear" >
+                        <option value="null">Выбрать</option>
+                            <option value="auto">Механическое</option>
+                            <option value="manual">Автоматическое </option>
+                      </select>
+                </div>
+<!-- ======================================================================================================================================= -->
+
+
+<!-- color_of_car -->
+<!-- ======================================================================================================================================= -->
+                <div id="color">
+                  <select name="color_of_car" style="margin-top:7%;">
+                        <option value="0">Выбрать</option>
+                        <option value="1">Асфальт</option>
+                        <option value="2">Бежевый</option>
+                        <option value="3">Бирюзовый</option>
+                        <option value="4">Бронзовый</option>
+                        <option value="5">Вишневый</option>
+                        <option value="6">Голубой</option>
+                        <option value="7">Желтый</option>
+                        <option value="8">Золотой</option>
+                        <option value="9">Коричневый</option>
+                        <option value="10">Магнолии</option>
+                        <option value="11">Матовый</option>
+                        <option value="12">Оливковый</option>
+                        <option value="13">Розовый</option>
+                        <option value="14">Сафари</option>
+                        <option value="15">Фиолетовый</option>
+                        <option value="16">Хамелеон</option>
+                        <option value="17">Белый</option>
+                        <option value="18">Черный</option>
+                        <option value="19">Синий</option>
+                        <option value="20">Серый</option>
+                        <option value="21">Серебристый</option>
+                        <option value="22">Красный</option>
+                        <option value="23">Зеленый</option>
+                        <option value="24">Апельсин</option>
+                  </select>
+<!-- ======================================================================================================================================  -->
+
+
+<!-- type_of_fuel -->
+                <div class="type_of_fuel" style="margin-top:6%;">
+                  <select  name="type_of_fuel_select">
+                    <option value="0">Выбрать</option>
+                        <option value="1">Бензин</option>
+                        <option value="2">Дизель</option>
+                        <option value="3">Газ-Бензин</option>
+                  </select>
+<!-- ======================================================================================================================================= -->
+
+<!-- Car_state -->
+                  <div class="car_state" style="margin-top:8%;">
+                      <select class="" name="State_of_Car">
+                        <option value="0">Выбрать</option>
+                            <option value="1">Отличное</option>
+                            <option value="2">Хорошее</option>
+                            <option value="3">Среднее</option>
+                            <option value="4">Требует Ремонта</option>
+                      </select>
+                  </div>
+<!-- ======================================================================================================================================= -->
+
+<!-- rule_side -->
+                  <div class="rule_side" style="margin-top:7%;">
+                      <select class="" name="Rule_Side">
+                        <option value="0">Выбрать</option>
+                            <option value="1">Справо</option>
+                            <option value="2">Слево</option>
+                      </select>
+                  </div>
+<!-- ====================================================================================================================================== -->
+                  <div class="mile_counter" style="margin-top: 5.5%;">
+                          <input type="text" name="Mileage" style="width:40%;border-radius:3%; border: 1px solid grey; ">
+                          <h5 style="display:inline">км</h5>
+                  </div>
+                  <div id="volume" style="margin-top:6%;">
+                    <input type="text" name="Volume_of_Engine" style="width:40%;border-radius:3%; border: 1px solid grey; ">
+                    <h5 style="display:inline">л/м2</h5>
+                  </div>
+                </div>
+                </div>
+          </div>
+    </div>
+    <div class="" style="width:100%; margin-top:-5%; ">
+      <label style="margin-left:8%;">Описание</label>
+      <textarea rows="7"  Type="text" name="namet"  style="width: 60%;display:inline-block; border: none solid grey; border-radius: 2%; margin-left:1%;display:inline-block;vertical-align:top;"></textarea>
+
+    </div>
+
+    <div class="area_for_image" style="width:100%; height: auto; background-color:pink;margin-top:6%;">
+        <div class="b3" style="width:100%;height:1%;">
+
+        </div>
+        <div class="main" style="width:100%; height:100%; margin-left:0;">
+        <h1>Image Downloading</h1><br/>
+        <hr>
+        <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+        <div id="image_preview"><img id="previewing" src="images/plus_icon.png" style="margin-left:43%; width:10%; height:50px; border: 1px solid green; border-radius:3%;" ></div>
+        <hr id="line">
+        <div id="selectImage">
+        <label>Select Your Image</label><br/>
+        <input type="file" name="file" id="file" required />
+        <input type="submit" value="Upload" class="submit" />
+        </div>
+        <div class="border" style="width:100%; height:2px; background-color:grey;">
+
+        </div>
+        </form>
+        </div>
+        <h4 id='loading' >loading..</h4>
+        <div id="message"></div>
+        <div class="border" style="width:100%; height:2px; background-color:grey; margin-top:1%;">
+
+        </div>
+
+  </div>
+
+    </div>
+
+
+    <div class="box" style="width:100%; height:250px; background-color:pink;  margin-top: 5%;">
+
+      <div class="adress" style="width:100%; height: 15%; margin-bottom: 2%;">
+            <div class="wrt1" style="display:inline-block; width: 25%; height:100%; text-align:right; margin-top:2%; ">
+                  <h5 style="margin-top:0; font-family:Arial; font-size: 90%; font-weight: 550; ">Город*</h5>
+            </div>
+            <div class="area1" style="display:inline-block;  width:45%; height: 100%; margin-left:2%;">
+                  <input type="text" name="City" value="" style="margin:0; width:50%; border: 0.5px solid #478aff; border-radius:5%;  height: 70%;">
+            </div>
+      </div>
+              <div class="adress" style="width:100%; height: 15%; margin-bottom: 2%;">
+                    <div class="wrt1" style="display:inline-block; width: 25%; height:100%; text-align:right; margin-top:2%; ">
+                          <h5 style="margin-top:0; font-family:Arial; font-size: 90%; font-weight: 550; ">Добавьте населенный пункт*</h5>
+                    </div>
+                    <div class="area1" style="display:inline-block;  width:45%; height: 100%; margin-left:2%;">
+                          <input type="text" name="Adress" value="" style="margin:0; width:50%; border: 0.5px solid #478aff; border-radius:5%;  height: 70%;">
+                    </div>
+              </div>
+                <div class="border1" style="border:0.2px solid #d3d3d3; width: 100%;">
+
+                </div>
+              <div class="adress" style="width:100%; height: 15%;">
+                    <div class="wrt1" style="display:inline-block; width: 25%; height:100%; text-align:right; margin-top:2%; ">
+                          <h5 style="margin-top:0; font-family:Arial; font-size: 90%; font-weight: 550; ">Номер телефона*</h5>
+                    </div>
+                    <div class="area1" style="display:inline-block;  width:45%; height: 100%; margin-left:2%;">
+                          <input type="text" name="Number_of_phone" value="" style="margin:0; width:50%; border-radius:5%; border:0.5px solid #478aff; height: 70%;">
+                    </div>
+              </div>
+              <div class="adress" style="width:100%; height: 15%;">
+                    <div class="wrt1" style="display:inline-block; width: 25%; height:100%; text-align:right; margin-top:2%; ">
+                          <h5 style="margin-top:0; font-family:Arial; font-size: 90%; font-weight: 550; ">E-mail адресс</h5>
+                    </div>
+                    <div class="area1" style="display:inline-block;  width:45%; height: 100%; margin-left:2%;">
+                          <input type="text" name="Email" value="" style="margin:0; width:50%; border-radius:5%; border:0.5px solid #478aff; height: 70%; ">
+                    </div>
+              </div>
+              <div class="adress" style="width:100%; height: 15%;">
+                    <div class="wrt1" style="display:inline-block; width: 25%; height:100%; text-align:right; margin-top:2%; ">
+                          <h5 style="margin-top:0; font-family:Arial; font-size: 90%; font-weight: 550; ">Контактное лицо</h5>
+                    </div>
+                    <div class="area1" style="display:inline-block;  width:45%; height: 100%; margin-left:2%;">
+                          <input type="text" name="Contact_face11" value="" style="margin:0; width:50%; border-radius:5%; border:0.5px solid #478aff; height: 70%; ">
+                    </div>
+              </div>
+              <!-- <div class="border4" style="width: 100%; height:2px; margin-bottom:5%;">
+
+              </div>  -->
+
+
+    </div>
+    <div class="done" style="border: 0.5px solid red; height: 50px;">
+             <div class="btn-done" style="margin-left:70%; height: 70%; margin-top:0.8%;  ">
+                   <input type="button" name="last_button" value="Опубликовать" style="background-color:#3d73cc;border: 0.3px; border-radius: 5%; font-family:arial; color: white; height: 100%; width: 90%;">
+             </div>
+     </div>
+        </div>
+
+
+
+
+
+
+  </body>
+</html>

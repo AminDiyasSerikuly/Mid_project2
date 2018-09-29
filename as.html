@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .src-image {
+display: none;
+}
+
+.card {
+overflow: hidden;
+position: relative;
+border: 1px solid #CCC;
+border-radius: 8px;
+text-align: center;
+padding: 0;
+background-color: #284c79;
+color: rgb(136, 172, 217);
+height: 100%;
+}
+
+.card .header-bg {
+/* This stretches the canvas across the entire hero unit */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 70px;
+border-bottom: 1px #FFF solid;
+/* This positions the canvas under the text */
+z-index: 1;
+}
+.card .avatar {
+position: relative;
+margin-top: 15px;
+z-index: 100;
+}
+
+.card .avatar img {
+width: 100px;
+height: 100px;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+border: 5px solid rgba(0,0,30,0.8);
+}
+.mi{
+  width: 250px;
+  height: 230px;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="mi">
+
+    <div class="card">
+                    <canvas class="header-bg" width="250" height="70" id="header-blur"></canvas>
+                    <div class="avatar">
+                        <img src="C:/Users/amind/Desktop/images5.png" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <p>Web Developer <br>
+                           More description here</p>
+                        <p><button type="button" class="btn btn-default">Contact</button></p>
+                    </div>
+                </div>
+
+              </div>
+  </body>
+</html>

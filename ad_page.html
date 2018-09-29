@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Form </title>
+    <link rel="stylesheet"  href="css/registration.css">
+    <link rel="stylesheet" href="C:/Users/amind/Desktop/Mid_Project/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("div[name='d1']").bind("click", function(){
+        $("#img_right_2").attr("src","C:/Users/amind/Desktop/car5.jpg");
+      });
+        $("div[name='d2']").bind("click", function(){
+              $("#img_right_2").attr("src","C:/Users/amind/Desktop/car2.jpg");});
+              $("div[name='d3']").bind("click", function(){
+                    $("#img_right_2").attr("src","C:/Users/amind/Desktop/car3.jpg");});
+                    $("div[name='d4']").bind("click", function(){
+                          $("#img_right_2").attr("src","C:/Users/amind/Desktop/car4.jpg");});
+                          $("div[name='d']").bind("click", function(){
+                                $("#img_right_2").attr("src","C:/Users/amind/Desktop/car.jpg");});
+
+
+});
+</script>
+
+
+
+    <style media="screen">
+
+        .container{
+          /* width: 100%; */
+          /* width: 80%; */
+          height: 100%;
+        }
+
+        .main_right_side{
+          width: 65%;
+          height: 100%;
+          /* background-color: lightblue; */
+        }
+        .main_left_side{
+          width: 33%;
+          height: 490px;
+          background-color: lightyellow;
+        }
+        .main_right_side,.main_left_side{display: inline-block; vertical-align: top;};
+        #explain{
+          width: 100%;
+          height: 100%;
+          /* background-color: lightyellow; */
+        }
+        #the_same{
+          border-top: 1px;
+          margin-top: 1%;
+          width: 100%;
+          height: 6%;
+          background-color: lightgreen;
+          text-align: center;
+          border-radius: 5%;
+        }
+        #p9{
+          /* margin-left: 4%; */
+          color: white;
+          margin-top: 6%;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 150%;
+          font-weight: 530;
+          /* font-size: 18px; */
+
+        }
+        button[name="button"]{
+
+          background-color: lightblue;
+          width: 100%;
+          height: 100%;
+          border-radius: 3%;
+          text-align: center;
+        }
+        button[name="button"]:hover{
+              background-color: #008CBA;
+        }
+        h2[name="av"]{
+
+        }
+
+        #for_picture{
+          margin-top: 3%;
+          width: 100%;
+          height: 700px;
+          /* border: 1px solid lightblue; */
+
+        }
+        h3{
+          font-size: 135%;
+          margin-left: 0%;
+          margin-top:  5%;
+          font-weight: 400;
+        }
+        h4{
+
+        }
+        #for_col{
+
+            background-color: orange;
+            text-align: center;
+              height: 53%;
+        }
+        /* #table{
+          width: 40%;
+
+        } */
+        /* #image_place,#image_carusel{display: inline-block; vertical-align: top;} */
+
+        .ChapterAndPrice{
+          /* background-color: red; */
+          height: 140px;
+          width: 66%;
+        }
+        #Chapter{
+          /* margin-left: 2px; */
+          height: 88px;
+          width: 100%;
+          /* background-color: grey; */
+          border-top: 1px solid grey;
+          border-bottom: 1px solid grey;
+        }
+        #credit{
+          width: 100%;
+          height: 58%;
+        }
+        #un_chapter{
+          width: 75%;
+          height: 100%;
+        }
+        #Price2{
+          width: 24%;
+          height: 100%;
+
+        }
+        #Price{
+          height: 35px;
+          width: 97%;
+          border-bottom: 1px solid grey;
+
+          /* background-color: pink; */
+        }
+        #image_place{
+          /* margin-left: 3%; */
+          /* background-color: yellow; */
+          width: 100%;
+          height: 50%;
+          /* margin-left: 5%; */
+          /* margin-top: 2%;  */
+         }
+         #image_carusel{
+           margin-left: 1.6%;
+           width: 100%;
+           height: 45%;
+
+            /* background-color: red; */
+         }
+         .image{
+           width: 57%;
+           height: 85%;
+         }
+         #about_car,.image{display: inline-block; vertical-align: top;};
+
+         #fk{
+
+           height: 15.7%;
+           /* width: 10%; */
+           display: inline-block;
+           vertical-align: bottom;
+         }
+
+         #mini_image{
+           margin-top: 1%;
+           /* margin-top: 1%; */
+
+           /* margin-left: 5%; */
+           /* margin: 0 auto; */
+           width: 15.5%;
+           height: 15.8%;
+           display: inline-block;
+           /* background-color: blue; */}
+
+        #about_car{
+            /* background-color: red; */
+
+            width: 40%;
+            height: 49%;
+        }
+
+        h4{
+          display: inline-block;
+          font-weight: 500;
+          font-size: 100%;
+        }
+        #un_table1,#un_table2{
+
+          display: inline-block;
+          width: 49%;
+          height: 100%;}
+
+        #table1{
+
+          width: 100%;
+          height: 12.5%;
+          /* background-color: pink; */
+          /* border: 1px solid black; */
+        }
+
+
+          #mini_image:hover{
+             background-color: green;
+          }
+          #mini_image:active{
+             background-color: green;
+          }
+
+        #comment_place1{
+          /* background-color: pink; */
+          /* margin-left: 5%; */
+          width: 100%;
+          height: 45%;
+        }
+        #chapter{
+           border-top: 0.5px solid grey;
+           border-bottom: 0.5px solid grey;
+          width: 100%;
+          height: 15%;
+           /* background-color: lightgreen; */
+        }
+        #location_time{
+          /* background-color: orange; */
+          width: 100%;
+          height: 85%;
+          /* border-bottom: 0.5px solid grey; */
+        }
+        #img_right_1{
+          margin-left: 1%;
+          margin-top: 0.5%;
+          height: 97%;
+          width: 97%;
+        }
+          #img_right_2{
+            height: 100%;
+            width: 100%;
+          }
+          #un_chapter,#Price2{display: inline-block;vertical-align: bottom;}
+         #main_right_side,#main_left_side{display: inline-block;};
+
+        /* img[name="i1"]{
+          height: 1%;
+        } */
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="main_div">
+        <div id="border3">
+        </div>
+        <div id="ma_un">
+          <div id="I">
+              <a id="ik">Rus</a>
+              <a id="ik">|</a>
+              <a id="ik">Eng</a>
+
+          </div>
+        </div>
+        <div id="border3">
+        </div>
+      </div>
+
+    </header>
+
+    <div class="container">
+      <div id="login">
+        <div id="image_main">
+              <img  id="w1" src="C:\Users\amind\Desktop\GSA.jpg" width="60px" height="60px">
+              <h5 id="">Box Of Ads</h5>
+        </div>
+        <div id="w2">
+            <input type="button"  value="+ Leave ad" class="btn btn-warning"></input>
+        </div>
+        <div id="w1">
+            <img src="C:/Users/amind/Desktop/m_a.png" width="20" width="20" id="im1">
+            <h5 id="w">My Accaount</h5>
+        </div>
+        <div id="w1">
+            <img src="C:/Users/amind/Desktop/c_a.png" width="20" width="20" id="im1">
+            <h5 id="w">Contacts</h5>
+          </div>
+          </div>
+
+
+          <div class="container">
+            <!-- <div class="ChapterAndPrice"> -->
+
+             <div class="main_right_side">
+               <div id="Chapter">
+                 <div id="un_chapter">
+                   <h1>Toyota Camry 2012 года</h1>
+                 </div>
+               <div id="Price2">
+                      <h3>1 000 000 000 тг.</h3>
+                      <div id="credit">
+                            В кредит
+                            <div id="for_col">
+                                <h4>8,333,333 тг/мес</h4>
+                            </div>
+
+                      </div>
+               </div>
+               </div>
+               <div id="Price">
+
+               </div>
+                 <div id="for_picture">
+                   <div id="about_car">
+                     <div id="table1">
+                       <div id="un_table1">
+                          <h4 id="ci">Город:</h4>
+                       </div>
+                       <div id="un_table2">
+                           <h4 id="ci2">Астана</h4>
+                       </div>
+                     </div>
+                     <div id="table1">
+                       <div id="un_table1">
+                          <h4 id="ci">Кузов:</h4>
+                       </div>
+                       <div id="un_table2">
+                           <h4 id="ci2">Седан</h4>
+                       </div>
+                     </div>
+                     <div id="table1">
+                       <div id="un_table1">
+                          <h4 id="ci">Обьем двигителя:</h4>
+                       </div>
+                       <div id="un_table2">
+                           <h4 id="ci2">2.5л(бензин)</h4>
+                       </div>
+                     </div>
+                     <div id="table1">
+                       <div id="un_table1">
+                          <h4 id="ci">Пробег:</h4>
+                       </div>
+                       <div id="un_table2">
+                           <h4 id="ci2">125 000 км</h4>
+                       </div>
+                     </div>
+                     <div id="table1">
+                       <div id="un_table1">
+                          <h4 id="ci">Каробка передач:</h4>
+                       </div>
+                       <div id="un_table2">
+                           <h4 id="ci2">Автомат</h4>
+                       </div>
+                     </div>
+                     <div id="table1">
+                       <div id="un_table1">
+                          <h4 id="ci">Цвет:</h4>
+                       </div>
+                       <div id="un_table2">
+                           <h4 id="ci2">Оранжевый</h4>
+                       </div>
+                     </div>
+                     <div id="table1">
+                       <div id="un_table1">
+                          <h4 id="ci">Руль:</h4>
+                       </div>
+                       <div id="un_table2">
+                           <h4 id="ci2">Слева</h4>
+                       </div>
+                     </div>
+                     <div id="table1">
+                       <div id="un_table1">
+                          <h4 id="ci">Город:</h4>
+                       </div>
+                       <div id="un_table2">
+                           <h4 id="ci2">Астана</h4>
+                       </div>
+                     </div>
+
+
+                   </div>
+                   <div class="image">
+                    <div id="image_place">
+                      <img src="C:/Users/amind/Desktop/car.jpg" id="img_right_2">
+                    </div>
+
+                    <div id="image_carusel">
+                      <div id="fk">
+
+                      </div>
+                          <div id="mini_image" name="d">
+                                  <img src="C:/Users/amind/Desktop/car.jpg" id="img_right_1" name="i1">
+                          </div>
+                          <div id="mini_image" name="d1">
+                              <img src="C:/Users/amind/Desktop/car5.jpg" id="img_right_1" name="i2">
+                          </div>
+                          <div id="mini_image" name="d2">
+                              <img src="C:/Users/amind/Desktop/car2.jpg" id="img_right_1" name="i3">
+                          </div>
+                          <div id="mini_image" name="d3">
+                              <img src="C:/Users/amind/Desktop/car3.jpg" id="img_right_1" name="i4">
+                          </div>
+                          <div id="mini_image" name="d4">
+                              <img src="C:/Users/amind/Desktop/car4.jpg" id="img_right_1" name="i5">
+                          </div>
+                          <div id="mini_image" name="d4">
+                              <img src="C:/Users/amind/Desktop/car5.jpg" id="img_right_1" name="i5">
+                          </div>
+                    </div>
+                    <div id="comment_place1">
+                        <div id="chapter">
+                        </div>
+                        <div id="location_time">
+                          <div id="location">
+                          </div>
+                          <div id="time">
+                          </div>
+                        </div>
+                 </div>
+             </div>
+
+          </div>
+        </div>
+
+          <div class="main_left_side">
+
+          </div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+          <div class="footer">
+            <img src="C:/Users/amind/Desktop/footer.png" id="img1">
+          </div>
+
+
+
+
+  </body>
+
+</html>
